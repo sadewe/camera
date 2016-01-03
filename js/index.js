@@ -7,8 +7,7 @@ $(document).ready(function(){
     }
 
     function takePicture(){
-        $(".button--submit").on("click", function(){
-            alert("click");
+        $(".jsCamera").on("click", function(){
             navigator.camera.getPicture(onSuccess, onFail, {
                 quality: 25,
                 destinationType: Camera.DestinationType.FILE_URI,
